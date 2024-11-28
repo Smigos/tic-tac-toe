@@ -1,7 +1,7 @@
 import tkinter as tk
-from gui import TicTacToeGUI
+from gui_KLM import TicTacToeGUIKLM
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = TicTacToeGUI(root)
+    app = TicTacToeGUIKLM(root)
     root.mainloop()

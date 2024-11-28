@@ -25,9 +25,9 @@ class TicTacToeGUIKLM:
             self.buttons[row][col].config(text=self.game.current_player)
             winner = self.game.check_winner()
             if winner:
-                self.show_winner(winner)
+                self.show_winner_klm(winner)
             elif self.game.is_draw():
-                self.show_winner("Döntetlen")
+                self.show_winner_klm("Döntetlen")
             else:
                 self.game.switch_player()
                 self.ai_move()
@@ -67,5 +67,5 @@ class TicTacToeGUIKLM:
 # Főprogram indítása
 if __name__ == "__main__":
     root = tk.Tk()
-    app = TicTacToeGUI(root)
+    app = TicTacToeGUIKLM(root)
     root.mainloop()
